@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  
+
+  <title>Omkar Karnik Portfolio</title>
+  <meta name="description" content="Omkar Karnik Portfolio" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img
+          src="./images/IMG_8D02278DBA02-1.jpeg"
+          alt="logo Image" class="main-header__logo-img" />
+      </div>
+      <h4 class="main-header__logo-text">Omkar Karnik</h4>
+    </div>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+      </ul>
+    </nav>
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close">
+
+      </div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
+
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+  </header>
+
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <!-- <div class="themeClrSelector">
+    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+      class="themeClrSelector__img" />
+  </div> -->
+  <!---->
+
+  <section id="home-hero" class="home-hero">
+    <div class="home-hero__content">
+      <div class="home-hero__info">
+        <h1 class="heading-primary home-hero__heading-primary">
+          <span class="heading-primary__sm"> Hello 👋</span>
+          <span class="heading-primary__main">
+            I'm Omkar Karnik! An Aspiring Software Engineer.
+          </span>
+        </h1>
+        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
+        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__main">
+         Who am I ?
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <p class="text-primary about__text-primary">
+              <span>
+                I am a driven individual with a passion for technology and innovation. I'm pursuing my Master's in Computer Science at the University of Dayton and I'm activley looking for software engineering roles.
+              </span>
+              <span>
+                I am eager to apply my knowledge, skills, and experience to new challenges and opportunities, and I am confident that I would make a valuable contribution to any team.
+              </span>
+              <span>
+                I absolutely love talking about astronomy because the sheer vastness of space never fails to excite me. <i class="fa-duotone fa-ufo-beam fa-beat"></i>
+              </span>
+            </p>
+            <button class="btn btn-theme about__btn-theme">Projects</button> 
+            <button class="btn btn-inv projects__btn-inv">Resume</button>
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Skills
+            </h3>
+            <ul class="about__skills">
+              <li class="about__skill">Html</li>
+              <li class="about__skill">Css</li>
+              <li class="about__skill">Javascript</li>
+              <li class="about__skill">React</li>
+              <li class="about__skill">Node</li>
+              <li class="about__skill">git</li>
+              <li class="about__skill">Express</li>
+              <li class="about__skill">Docker</li>
+              <li class="about__skill">Jquery</li>
+              <li class="about__skill">Ajax</li>
+              <li class="about__skill">Agile/Scrum</li>
+              <li class="about__skill">MongoDB</li>
+              <li class="about__skill">SQL</li>
+              <li class="about__skill">Python</li>
+              <li class="about__skill">JSON</li>
+              <li class="about__skill">REST</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-showcase">
+    <ul class="skills-showcase__list">
+      <li class="skills-showcase__list-item">
+        <i class="devicon-html5-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-css3-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-javascript-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-react-original"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-nodejs-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-git-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-python-plain"></i>
+      </li>
+    </ul>
+  </section>
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> Projects 🛠️</span>
+        <span class="heading-secondary__main">
+          My academic and personals projects so far.
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 1 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="images/Screenshot 2023-04-06 at 3.40.49 AM.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Secure Password Manager Using MERN
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  A password management portal which securely allows users
+                  to store, edit and share passwords among their team members. 
+                  Encrypted the passwords using private and public key pair and 
+                  created the chrome extension to store the private key on the 
+                  browser to decrypt the password. Implemented RESTful APIs 
+                  using Node.js and Express.js and authenticated the user using JWT token.
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+             
+                </span>
+              </p>
+              <button class="btn btn-inv projects__btn-inv" onclick="window.location.href='https://github.com/Omkarkarnik/Secure_password_Manager';" target="_blank">Code Link</button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="images/Screenshot 2023-04-07 at 7.40.19 AM.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Web Chat Application and basic Chatbot using Node.js, Express.js, HTML, CSS, and socket.io
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Created an application for a graduate course, allowing users 
+                  to communicate with multiple users through chat messages. 
+                  Built three distinct microservices for login, signup, and 
+                  storing chat history and implemented real-time communication 
+                  functionality in the web chat application using Socket.io 
+                  programming. Hosted the microservices on Microsoft Azure, 
+                  Bitbucket Cloud, Heroku and programmed the CI/CD setup for 
+                  automatic deployments.
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme" onclick="window.location.href='https://cca-team5-project.azurewebsites.net';" target="_blank">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv" onclick="window.location='https://bitbucket.org/cca-chhatwania1-karniko1/cca-project/src/sprint3/';" target="_blank">Code Link</button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 2 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 3 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="images/Screenshot 2023-04-06 at 4.44.05 AM.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Audio Classification Android Application Using TensorFlow Lite.
+                Collaborated with other teams to record and acquire a dataset of the voices of 10,000+ people of different cultures.
+                Trained the neural network model using the dataset and achieved an accuracy of 65%.
+                
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Built an Audio Classification Application using Python that listens to the user’s voice and predicts the alphabet spoken.
+
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme" onclick="window.location='https://drive.google.com/file/d/1wNTcRAvMvePoFkEMvQYpFIIWFnLEX45b/view?usp=share_link';" target="_blank">
+                Demo Link
+              </button>
+            </div>
+          </div>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary">
+        <span class="heading-secondary__main">
+          Let's Connect !
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="contact__form-cont">
+          <form class="contact__form">
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Name</label>
+              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Email</label>
+              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Message</label>
+              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
+                class="contact__form-field-input"></textarea>
+            </div>
+            <button type="submit" class="contact__form-submit">Submit</button>
+          </form>
+          <div class="contact__form-visual"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="#" class="main-footer__social-link" onclick="window.location='https://github.com/Omkarkarnik';"> 
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__bottom">
+      <div class="main-container">
+        <p class="main-footer__bottom-txt"></p>
+          <a target="_blank" href="https://github.com/Omkarkarnik">WowFolio</a> Open-Source Template
+          Made by Omkar Karnik
+          </a> <script>document.write(new Date().getFullYear())</script>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
