@@ -111,9 +111,9 @@ const eventFire = (el, etype) => {
   }
 }
 
-themeColorSelector.addEventListener('click', () => {
-  eventFire(themeColorSelectorInput, 'input')
-})
+// themeColorSelector.addEventListener('click', () => {
+//   eventFire(themeColorSelectorInput, 'input')
+// })
 
 const setDynamicColor = (color) => {
 
@@ -123,9 +123,9 @@ const setDynamicColor = (color) => {
   //localStorage.setItem('color', color)
 }
 
-themeColorSelectorInput.addEventListener('input', (e) => {
-  setDynamicColor(e.target.value)
-})
+// themeColorSelectorInput.addEventListener('input', (e) => {
+//   setDynamicColor(e.target.value)
+// })
 
 // if (localStorage.getItem('color')) {
 //   let userSelectedColor = localStorage.getItem('color')
@@ -139,3 +139,38 @@ const headerLogoConatiner = document.querySelector('.main-header__logo-container
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+const elementToScrollTo = (element) => {
+
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
+function redirect(element) {
+  window.open(element, "_blank");
+}
+
+window.onload = function () {
+  window.scrollTo(0, 0);
+}
+
+function clearValue() {
+  document.getElementById('name').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('message').value = "";
+};
+
+function sendEmail(name, email, message) {
+  const recipient = 'omkark083@gmail.com'; // Replace with your own email address
+  const subject = `Message from ${name}`;
+  const body = `From: ${name}\nEmail: ${email}\n\n${message}`;
+  const encodedSubject = encodeURIComponent(subject);
+  const encodedBody = encodeURIComponent(body);
+  const mailtoUrl = `mailto:${recipient}?subject=${encodedSubject}&body=${encodedBody}`;
+  window.location.href= mailtoUrl;
+}
+
+function sendMessage() {
+  sendEmail(document.getElementById('name'),document.getElementById('email'),document.getElementById('message'))
+  clearValue();
+};
+
