@@ -29,11 +29,11 @@
     <nav class="main-header__navigation">
       <ul class="main-header__navigation-links">
         <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
-        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link"><a onclick="elementToScrollTo(document.getElementById('about'))" > About </a></li>
         <li class="main-header__navigation-link">
-          <a href="./index.html#projects"> Projects </a>
+          <a onclick="elementToScrollTo(document.getElementById('projects'))"> Projects </a>
         </li>
-        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+        <li class="main-header__navigation-link"><a onclick="elementToScrollTo(document.getElementById('contact'))" > Contact </a></li>
       </ul>
     </nav>
     <div class="main-header__sm-scr-nav-btn">
@@ -80,8 +80,8 @@
             I'm Omkar Karnik! An Aspiring Software Engineer.
           </span>
         </h1>
-        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
-        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+        <button class="btn btn-theme home-hero__btn-theme" onclick="elementToScrollTo(document.getElementById('projects'))">Projects</button>
+        <button class="btn btn-inv home-hero__btn-theme" onclick="elementToScrollTo(document.getElementById('contact'))">Contact</button>
       </div>
     </div>
   </section>
@@ -105,8 +105,8 @@
                 I absolutely love talking about astronomy because the sheer vastness of space never fails to excite me. <i class="fa-duotone fa-ufo-beam fa-beat"></i>
               </span>
             </p>
-            <button class="btn btn-theme about__btn-theme">Projects</button> 
-            <button class="btn btn-inv projects__btn-inv" onclick"window.location='https://drive.google.com/file/d/1j_8iCrc311m4tIhItBAG4-Rv0_ZMruFK/view?usp=share_link';" target="_blank">Resume</button>
+            <button onclick="elementToScrollTo(document.getElementById('projects'))" class="btn btn-theme about__btn-theme">Projects</button> 
+            <button class="btn btn-inv projects__btn-inv" onclick="redirect('assets/Omkar_Karnik_Resume.pdf')">Resume</button>
           </div>
           <div class="about__skill-info">
             <h3 class="heading-quaternary about__heading-quaternary">
@@ -122,7 +122,7 @@
               <li class="about__skill">Express</li>
               <li class="about__skill">Docker</li>
               <li class="about__skill">Jquery</li>
-              <li class="about__skill">Ajax</li>
+              <li class="about__skill">Ajax</li>res
               <li class="about__skill">Agile/Scrum</li>
               <li class="about__skill">MongoDB</li>
               <li class="about__skill">SQL</li>
@@ -165,7 +165,7 @@
       <h2 class="heading-secondary projects__heading-secondary">
         <span class="heading-secondary__sm"> Projects 🛠️</span>
         <span class="heading-secondary__main">
-          My academic and personals projects so far.
+          My academic and personal projects so far.
         </span>
       </h2>
       <div class="main-section__content">
@@ -200,7 +200,7 @@
              
                 </span>
               </p>
-              <button class="btn btn-inv projects__btn-inv" onclick="window.location.href='https://github.com/Omkarkarnik/Secure_password_Manager';" target="_blank">Code Link</button>
+              <button class="btn btn-inv projects__btn-inv" onclick="redirect('https://github.com/Omkarkarnik/Secure_password_Manager')">Code Link</button>
             </div>
           </div>
           <div class="projects__list-item projects__list-item--inv">
@@ -229,10 +229,10 @@
                 <span>
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme" onclick="window.location.href='https://cca-team5-project.azurewebsites.net';" target="_blank">
+              <button class="btn btn-theme projects__btn-theme" onclick="redirect('https://cca-team5-project.azurewebsites.net')">
                 Live Link
               </button>
-              <button class="btn btn-inv projects__btn-inv" onclick="window.location='https://bitbucket.org/cca-chhatwania1-karniko1/cca-project/src/sprint3/';" target="_blank">Code Link</button>
+              <button class="btn btn-inv projects__btn-inv" onclick="redirect('https://bitbucket.org/cca-chhatwania1-karniko1/cca-project/src/sprint3')">Code Link</button>
             </div>
             <div class="projects__list-item-count">
               <span class="projects__list-item-count-num"> 2 </span>
@@ -252,8 +252,6 @@
               </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
                 Audio Classification Android Application Using TensorFlow Lite.
-                Collaborated with other teams to record and acquire a dataset of the voices of 10,000+ people of different cultures.
-                Trained the neural network model using the dataset and achieved an accuracy of 65%.
                 
               </h3>
               <!-- <hr class="projects__title-text-divider" /> -->
@@ -261,6 +259,9 @@
               <p class="text-primary projects__list-item-text-primary">
                 <span>
                   Built an Audio Classification Application using Python that listens to the user’s voice and predicts the alphabet spoken.
+                  Collaborated with other teams to record and acquire a dataset of the voices of 10,000+ people of different cultures.
+                  Trained the neural network model using the dataset and achieved an accuracy of 65%.
+                
 
                 </span>
                 <!-- <br />
@@ -268,7 +269,7 @@
                 <span>
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme" onclick="window.location='https://drive.google.com/file/d/1wNTcRAvMvePoFkEMvQYpFIIWFnLEX45b/view?usp=share_link';" target="_blank">
+              <button class="btn btn-theme projects__btn-theme" onclick="redirect('https://drive.google.com/file/d/1wNTcRAvMvePoFkEMvQYpFIIWFnLEX45b/view?usp=share_link')">
                 Demo Link
               </button>
             </div>
@@ -293,18 +294,18 @@
           <form class="contact__form">
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Name</label>
-              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+              <input id = "name" placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
             </div>
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Email</label>
-              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+              <input id="email" placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
             </div>
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Message</label>
-              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
+              <textarea placeholder="Enter Your Message" name="message" id="message" cols="30" rows="10"
                 class="contact__form-field-input"></textarea>
             </div>
-            <button type="submit" class="contact__form-submit">Submit</button>
+            <button type="submit" onclick="sendMessage()" class="contact__form-submit">Submit</button>
           </form>
           <div class="contact__form-visual"></div>
         </div>
@@ -330,15 +331,15 @@
         </ul>
         <div class="main-footer__mid-line"></div>
         <div class="main-footer__socials">
-          <a href="#" class="main-footer__social-link" onclick="window.location='https://github.com/Omkarkarnik';"> 
+          <a href="#" class="main-footer__social-link" onclick="redirect('https://github.com/Omkarkarnik')"> 
             <img
               src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
               alt="" class="main-footer__social-link-icon" />
           </a>
-          <a href="#" class="main-footer__social-link">
+          <a href="#" class="main-footer__social-link" onclick="redirect('https://www.instagram.com/karnik_omkar8')">
             <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
           </a>
-          <a href="#" class="main-footer__social-link">
+          <a href="#" class="main-footer__social-link" onclick="redirect('https://www.linkedin.com/in/omkarkarnik2399')">
             <img
               src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
               alt="" class="main-footer__social-link-icon" />
@@ -349,7 +350,7 @@
     <div class="main-footer__bottom">
       <div class="main-container">
         <p class="main-footer__bottom-txt"></p>
-          <a target="_blank" href="https://github.com/Omkarkarnik">WowFolio</a> Open-Source Template
+          <a target="_blank" onclick="redirect('https://github.com/Omkarkarnik')">WowFolio</a> Open-Source Template
           Made by Omkar Karnik
           </a> <script>document.write(new Date().getFullYear())</script>
         </p>
