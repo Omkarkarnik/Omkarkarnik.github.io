@@ -170,7 +170,7 @@ function sendEmail(name, email, message) {
 }
 
 function sendMessage() {
-  sendEmail(document.getElementById('name'),document.getElementById('email'),document.getElementById('message'))
+  sendEmail(document.getElementById('name').value,document.getElementById('email').value,document.getElementById('message').value)
   clearValue();
 };
 
